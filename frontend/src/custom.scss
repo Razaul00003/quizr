@@ -1,0 +1,22 @@
+//cutomizing boostrap theme
+$theme-colors: (
+  "primary": #2e2b5f,
+  "secondary": #177f51,
+  "white-light": #c7c4f8,
+);
+
+$color-primary-dark: #2e2b5f;
+$color-primary-light: #45418e;
+
+$color-bg-primary: #9d98f2;
+$color-bg-white-light: #d9d7f8;
+$color-bg-white: #ffffff;
+
+$color-secondary-dark: #0d482e;
+$color-secondary-light: #177f51;
+
+$text-color-dark: #0b0b18;
+$text-color-light: #22222e;
+
+//importing bootstap main file
+@import "~bootstrap/scss/bootstrap";
