@@ -4,14 +4,9 @@ import { useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
-function Dashboard(props) {
-  useEffect(() => {
-    const courses = axios
-      .get("https://opentdb.com/api.php?amount=10&category=22&type=multiple")
-      .then((data) => console.log(data));
-  }, []);
-
+function Dashboard() {
   return (
     <>
       <div>
@@ -21,7 +16,7 @@ function Dashboard(props) {
         className="container-fluid d-flex flex-wrap p-5 align-item-center justify-content-center justify-content-sm-between  "
         style={{ background: "#d9d7f8" }}
       >
-        <Card style={{ "max-width": "18rem" }} className="mb-5">
+        <Card style={{ maxWidth: "18rem" }} className="mb-5">
           <Card.Img
             variant="top"
             style={{ height: "220px" }}
@@ -34,14 +29,15 @@ function Dashboard(props) {
               A geography quiz enables us to explore and understand space and
               location.
             </p>
-
-            <Button variant="primary" className="w-100">
-              Start Quiz
-            </Button>
+            <Link to="/quiz/22">
+              <Button variant="primary" className="w-100">
+                Start Quiz
+              </Button>
+            </Link>
           </Card.Body>
           {/* course2 */}
         </Card>
-        <Card style={{ "max-width": "18rem" }} className="mb-5">
+        <Card style={{ maxWidth: "18rem" }} className="mb-5">
           <Card.Img
             variant="top"
             style={{ height: "220px" }}
@@ -54,14 +50,15 @@ function Dashboard(props) {
               This quiz and worksheet combo will help you assess what you know
               about different types of technology.
             </p>
-
-            <Button variant="primary" className="w-100">
-              Start Quiz
-            </Button>
+            <Link to="/quiz/30">
+              <Button variant="primary" className="w-100">
+                Start Quiz
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
         {/* course3 */}
-        <Card style={{ "max-width": "18rem" }} className="mb-5">
+        <Card style={{ maxWidth: "18rem" }} className="mb-5">
           <Card.Img
             variant="top"
             style={{ height: "220px" }}
@@ -74,14 +71,15 @@ function Dashboard(props) {
               Test your knowledge of science facts and applications of
               scientific principles by taking quiz
             </p>
-
-            <Button variant="primary" className="w-100">
-              Start Quiz
-            </Button>
+            <Link to="/quiz/17">
+              <Button variant="primary" className="w-100">
+                Start Quiz
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
         {/* course4 */}
-        <Card style={{ "max-width": "18rem" }} className="mb-5">
+        <Card style={{ maxWidth: "18rem" }} className="mb-5">
           <Card.Img
             variant="top"
             style={{ height: "220px" }}
@@ -94,10 +92,11 @@ function Dashboard(props) {
               Play this game to review Sports. What two letters are made when
               you make an overhand throw
             </p>
-
-            <Button variant="primary" className="w-100">
-              Start Quiz
-            </Button>
+            <Link to="/quiz/21">
+              <Button variant="primary" className="w-100">
+                Start Quiz
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
       </div>

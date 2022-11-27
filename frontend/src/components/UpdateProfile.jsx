@@ -7,7 +7,7 @@ function UpdateProfile(props) {
     <>
       <div
         style={{ backgroundColor: "#d9d7f8" }}
-        className="py-5 text-white bg-primary"
+        className="pt-5 pb-1 text-white bg-primary"
       >
         <Form>
           <Form.Group className="mb-3" controlId="formBasicText">

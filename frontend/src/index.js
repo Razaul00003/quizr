@@ -3,12 +3,23 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import store from "./store";
+import { positions, transitions, Provider as AlertProvider } from "react-alert";
+import alertTemplate from "react-alert-template-basic";
+const options = {
+  timeout: 5000,
+  positions: positions.BOTTOM_CENTER,
+  transitions: transitions.SCALE,
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <AlertProvider template={alertTemplate} {...options}>
+      <App />
+    </AlertProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

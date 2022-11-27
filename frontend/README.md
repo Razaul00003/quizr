@@ -1,3 +1,11 @@
+#steps
+create account
+login account
+show attempted questions
+change profile
+show quiz
+show quiz result
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

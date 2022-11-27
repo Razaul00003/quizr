@@ -1,0 +1,4 @@
+export const GET_QUIZ_SUCCESS = "GET_QUIZ_SUCCESS";
+export const GET_QUIZ_FAIL = "GET_QUIZ_FAIL";
+export const POST_QUIZ_SUCCESS = "POST_QUIZ_SUCCESS";
+export const POST_QUIZ_FAIL = "POST_QUIZ_FAIL";

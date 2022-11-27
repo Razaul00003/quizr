@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/rank" element={<LeadershipBoard />} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz/:category" element={<Quiz />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registration />} />
