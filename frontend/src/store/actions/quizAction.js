@@ -13,7 +13,7 @@ export const getResults = (data) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/results",
+        "https://quizr-razaul.herokuapp.com//api/results",
         data,
         config
       );
@@ -40,7 +40,7 @@ export const postResult = (data) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/post-result",
+        "https://quizr-razaul.herokuapp.com//api/post-result",
         data,
         config
       );

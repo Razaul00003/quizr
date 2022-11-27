@@ -15,7 +15,7 @@ export const userRegister = (data) => {
     try {
       console.log(data, typeof data);
       const response = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://quizr-razaul.herokuapp.com//api/register",
         data,
         config
       );
@@ -43,7 +43,7 @@ export const userLogin = (data) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/login",
+        "https://quizr-razaul.herokuapp.com//api/login",
         data,
         config
       );
