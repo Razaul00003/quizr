@@ -14,11 +14,7 @@ export const userRegister = (data) => {
 
     try {
       console.log(data, typeof data);
-      const response = await axios.post(
-        "https://quizr-razaul.herokuapp.com//api/register",
-        data,
-        config
-      );
+      const response = await axios.post("/api/register", data, config);
       if (response.token) {
         localStorage.setItem("token", response.data.token);
       }
@@ -42,11 +38,7 @@ export const userLogin = (data) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     try {
-      const response = await axios.post(
-        "https://quizr-razaul.herokuapp.com//api/login",
-        data,
-        config
-      );
+      const response = await axios.post("/api/login", data, config);
       if (response.token) {
         localStorage.setItem("token", response.data.token);
       }

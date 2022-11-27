@@ -12,11 +12,7 @@ export const getResults = (data) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     try {
-      const response = await axios.post(
-        "https://quizr-razaul.herokuapp.com//api/results",
-        data,
-        config
-      );
+      const response = await axios.post("/api/results", data, config);
 
       dispatch({
         type: GET_QUIZ_SUCCESS,
@@ -39,11 +35,7 @@ export const postResult = (data) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     try {
-      const response = await axios.post(
-        "https://quizr-razaul.herokuapp.com//api/post-result",
-        data,
-        config
-      );
+      const response = await axios.post("/api/post-result", data, config);
 
       dispatch({
         type: POST_QUIZ_SUCCESS,
