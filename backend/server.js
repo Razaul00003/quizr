@@ -3,6 +3,7 @@ const app = express();
 const dotenv = require("dotenv");
 const dbConnect = require("./config/database");
 const cors = require("cors");
+const path = require("path");
 
 //importing route
 const quizRouter = require("./routes/quizRoute.js");
