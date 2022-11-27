@@ -1,14 +1,14 @@
 {
   "name": "auizr",
+  "version": "1.0.0",
   "engines": {
     "node": "14.17.6"
   },
-  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "nodemon": "nodemon backend/server.js",
-    "start": "node backend/server.js",
+    "start": "nodemon backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
