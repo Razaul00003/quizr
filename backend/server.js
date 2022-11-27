@@ -11,7 +11,7 @@ const authRouter = require("./routes/authRoute.js");
 //configuring environment variable
 dotenv.config({ path: "backend/config/config.env" });
 dbConnect();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 //parse json body
 app.use(express.urlencoded({ extended: true }));
@@ -39,5 +39,4 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", authRouter);
 app.use("/api", quizRouter);
 
-app.listen(port, console.log("server running"));
-console.log(port);
+app.listen(PORT, console.log("server running"));
