@@ -47,18 +47,19 @@ function Login(props) {
             <h4 className="text-center text-primary mb-4">
               Login to Your Account
             </h4>
-            <h6 className="text-secondary">
-              {" "}
-              To view all the features use this credentials use defalut value or
-              create a account.
-            </h6>
-            Email: <span className="text-info">me@gmail.com</span>
-            <br />
-            Password: <span className="text-info">123456</span> <br /> <br />
+            <div className="text-muted ">
+              <h6>
+                {" "}
+                To view all the features use this credentials use defalut value
+                or create a account.
+              </h6>
+              Email: <span className="text-info">me@gmail.com</span>
+              <br />
+              Password: <span className="text-info">123456</span> <br /> <br />
+            </div>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
-                defaultValue="me@gmail.com"
                 onChange={inputHandler}
                 type="email"
                 name="email"
@@ -71,7 +72,6 @@ function Login(props) {
                 onChange={inputHandler}
                 type="password"
                 name="password"
-                defaultValue="123456"
                 placeholder="Password"
               />
             </Form.Group>

@@ -14,7 +14,6 @@ function Profile(props) {
   if (!authenticate) navigate("/login");
 
   const data = { userName: myInfo.userName };
-  console.log(results);
   useEffect(() => {
     dispatch(getResults(data));
   }, [results]);
